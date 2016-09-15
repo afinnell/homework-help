@@ -1,4 +1,4 @@
-public class TwelveDays {
+public class SixDays {
     public static void printDayTwo () {
         System.out.println("Two Turtle Doves");
     }
@@ -66,6 +66,10 @@ public class TwelveDays {
         if (args.length > 0) {
             DAY_OF_CHRISTMAS = Integer.parseInt(args[0]);
         }
-        printChristmasSong(DAY_OF_CHRISTMAS);
+        for (int day = 1; day <= DAY_OF_CHRISTMAS; day++) {
+            printChristmasSong(day);
+            System.out.println();
+        }
+        
     }
 }

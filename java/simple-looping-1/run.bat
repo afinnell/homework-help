@@ -1,2 +1,2 @@
-javac TwelveDays.java
-java -cp . TwelveDays %*
+javac SixDays.java
+java -cp . SixDays %*
