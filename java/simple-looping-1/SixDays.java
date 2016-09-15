@@ -1,18 +1,18 @@
 public class SixDays {
     public static void printDayTwo () {
-        System.out.println("Two Turtle Doves");
+        System.out.println("two turtle doves, and");
     }
     public static void printDayThree () {
-        System.out.println("Three French Hens");
+        System.out.println("three french hens,");
     }
     public static void printDayFour () {
-        System.out.println("Four Calling Birds");
+        System.out.println("four calling birds,");
     }
     public static void printDayFive () {
-        System.out.println("Five Gold Rings");
+        System.out.println("five gold rings,");
     }
     public static void printDaySix () {
-        System.out.println("Six Geese a-Laying");
+        System.out.println("six geese a-laying,");
     }
 
     /**
@@ -35,10 +35,7 @@ public class SixDays {
     }
     
     public static void printOutro(int day) {
-        if (day > 1) {
-            System.out.print("and ");
-        } 
-        System.out.println("a Partridge and a Pear Tree.");
+        System.out.println("a partridge in a pear tree.");
     }
 
     public static void printIntro(int dayInt) {
@@ -47,15 +44,14 @@ public class SixDays {
         // if (day == 1) { } etc.
         String day = "";
         switch (dayInt) {
-            case 1: day = "First"; break;
-            case 2: day = "Second"; break;
-            case 3: day = "Third"; break;
-            case 4: day = "Fourth"; break;
-            case 5: day = "Fifth"; break;
-            case 6: day = "Sixth"; break;
-            default: day = "Unknown Day"; break;
+            case 1: day = String.format("%dst", dayInt); break;
+            case 2: day = String.format("%dnd", dayInt); break;
+            case 3: day = String.format("%drd", dayInt); break;
+            case 4: day = String.format("%dth", dayInt); break;
+            case 5: day = String.format("%dth", dayInt); break;
+            case 6: day = String.format("%dth", dayInt); break;
         }
-        System.out.format("On the %s day of Christmas my true love sent to me", day);
+        System.out.format("On the %s day of Christmas, my true love sent to me", day);
         System.out.println();
     }
 
